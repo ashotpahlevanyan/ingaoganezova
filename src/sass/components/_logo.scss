@@ -1,0 +1,17 @@
+.logo {
+  width: 80px;
+  padding: 5px 10px;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .logo {
+    width: 80px;
+  }
+}

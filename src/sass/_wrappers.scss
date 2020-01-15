@@ -1,0 +1,9 @@
+.wrapper {
+  padding: 20px;
+}
+
+@media (max-width: $screen-xs-max) {
+  .wrapper {
+    padding: 10px 5px;
+  }
+}

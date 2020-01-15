@@ -1,0 +1,22 @@
+.clearfix-cm {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@media (max-width: 991px) {
+  .floatNoneSM {
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .floatNoneXS {
+    float: none;
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  padding: 30% 20px;
+}
+
+canvas{
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+h1 {
+  margin-bottom: 30px;
+}
+
+@media (orientation: portrait) {
+  .content {
+    padding: 40% 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: $fs26;
+  }
+  h2 {
+    font-size: $fs22;
+  }
+}

@@ -1,0 +1,7 @@
+site_name: Inga Oganezova's Personal Website
+highlightjs: true
+site_url:
+repo_url:
+nav:
+  - Home: index.md
+  - View on GitHub:
