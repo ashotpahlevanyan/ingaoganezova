@@ -52,6 +52,7 @@ $(document).ready(function(){
             ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
             flake.y += flake.velY;
             flake.x += flake.velX;
+            flake.rotation += 1;
 
             if (flake.y >= canvas.height || flake.y <= 0) {
                 reset(flake);
@@ -77,6 +78,7 @@ $(document).ready(function(){
         flake.velY = flake.speed;
         flake.velX = 0;
         flake.opacity = (Math.random() * 0.5) + 0.3;
+        flake.rotation = 0;
     }
 
     function init() {
@@ -85,7 +87,8 @@ $(document).ready(function(){
                 y = Math.floor(Math.random() * canvas.height),
                 size = (Math.random() * 3) + 2,
                 speed = (Math.random() * 1) + 0.5,
-                opacity = (Math.random() * 0.5) + 0.3;
+                opacity = (Math.random() * 0.5) + 0.3,
+                rotation = 40;
 
             flakes.push({
                 speed: speed,
@@ -97,7 +100,8 @@ $(document).ready(function(){
                 stepSize: (Math.random()) / 30,
                 step: 0,
                 angle: 180,
-                opacity: opacity
+                opacity: opacity,
+                rotation: rotation
             });
         }
 
