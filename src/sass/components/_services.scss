@@ -1,0 +1,13 @@
+.services {
+  @extend .p40-0;
+
+  h2 {
+    font-family: $ffLibertinage;
+    font-size: $fs48;
+    line-height: 1.2;
+    color: $colorBlack;
+    margin-bottom: 20px;
+  }
+}
+
+/// • -- for dot in list

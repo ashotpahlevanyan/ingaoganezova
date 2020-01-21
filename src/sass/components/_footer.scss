@@ -1,0 +1,34 @@
+.footer {
+  @extend .p30-0;
+  h2 {
+    color: $colorBlack;
+    font-family: $ffLibertinage;
+    font-size: $fs48;
+    margin-bottom: 20px;
+  }
+  .contactsList {
+    //@extend .p30-0;
+    li {
+      display: block;
+      & + li {
+        margin-top: 20px;
+      }
+
+      a {
+        color: $colorBlack;
+        font-size: $fs18;
+        &:hover,
+        &:focus {
+          color: $colorYellowBrand;
+          text-decoration: underline;
+        }
+      }
+      .fab, .fas {
+        color: $colorYellowBrand;
+        font-size: $fs30;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

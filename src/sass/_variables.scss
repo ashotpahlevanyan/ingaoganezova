@@ -1,12 +1,16 @@
 /* Device = Most of the Smartphones Mobiles (Portrait) */
 $screen-xxs-min: 320px;
-$screen-xxs-max: 480px;
+
 
 /* Device = Low Resolution Tablets, Mobiles (Landscape) */
+$screen-xxs-max: 480px;
 $screen-xs-min: 481px;
+
 $screen-xs-max: 767px;
+$screen-smm-min: 768px;
 
 $screen-smm-max: 991px;
+$screen-mm-min: 992px;
 
 /* Device = Tablets, Ipads (portrait) */
 $screen-sm-min: 768px;
@@ -14,6 +18,8 @@ $screen-sm-max: 1024px;
 
 /* Device = Laptops, Desktops */
 $screen-md-min: 1025px;
+
+$screen-md-mid: 1200px;
 $screen-md-max: 1280px;
 
 /* Device = Desktops */
@@ -65,3 +71,14 @@ $fs14: 14px;
 $fs13: 13px;
 $fs12: 12px;
 $fs11: 11px;
+
+
+/*
+* ======== Fonts ========
+*/
+
+$substituteHASS: Helvetica, Arial, sans-serif;
+
+/* ----- Stag Font ----- */
+$ffLibertinage: "Libertinage", $substituteHASS;
+$ffTrajanPro-Regular: "TrejanPro-Regular", $substituteHASS;

@@ -1,0 +1,13 @@
+.copyright {
+  @extend .p20-0;
+
+  a {
+    color: $colorWhite;
+    font-family: $ffTrajanPro-Regular;
+    font-size: $fs16;
+    text-decoration: none;
+    .far {
+      color: $colorYellowBrand;
+    }
+  }
+}

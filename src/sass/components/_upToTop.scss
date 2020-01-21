@@ -1,0 +1,36 @@
+.upToTop {
+  bottom: 100px;
+  display: none;
+  position: fixed;
+  right: 20px;
+  z-index: 100000;
+
+  &.show {
+    display: block;
+  }
+
+  .up {
+    background-color: $colorYellowBrand;
+    border: 1px solid $colorYellowBrand;
+    color: $colorWhite;
+    cursor: pointer;
+    font-size: $fs22;
+    height: 40px;
+    opacity: 1;
+    padding: 0px 5px;
+    width: 40px;
+    @include border-radius(5px);
+
+    &:hover,
+    &:focus {
+      background-color: $colorWhite;
+      color: $colorYellowBrand;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .upToTop {
+    bottom: 140px;
+  }
+}

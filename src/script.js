@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     (function() {
         let requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
             function(callback) {

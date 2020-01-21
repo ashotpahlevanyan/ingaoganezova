@@ -15,10 +15,262 @@
     </script>
 </head>
 <body>
-    <section class="content">
-        <h1 class="text-center">Inga Oganezova's Personal Website</h1>
-        <h2 class="text-center">Coming soon...</h2>
-        <canvas id="canvas"></canvas>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="/">
+                    <figure class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </figure>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-times"></span>
+                    <span class="fas fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#results">Results <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#law">The Law </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="hero">
+        <img src="images/heroBackground.jpg" alt="hero" class="heroBackground">
+        <div class="container sloganWrapper1">
+            <h1>Your <span class="yell">R</span>ights and <span class="yell">F</span>reedom<br>is our <span class="yell">P</span>riority</h1>
+        </div>
     </section>
+    <section class="services white" id="services">
+        <div class="container">
+            <h2>Criminal Defence Lawyer</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest
+                        criminal law firms. We defend our clients against all criminal allegations, at all trial
+                        and appeal courts including the Supreme Court of Canada. Our lawyers travel across
+                        Alberta and the N.W.T. (and beyond) to represent our clients. We have over 100 years
+                        of criminal trial and appeal court experience.</p>
+                    <p>For over 30 years we have defended thousands of clients accused with criminal offences such as
+                        theft, assault, impaired driving (DUI),  sexual assault, internet crimes, murder, fraud, uttering
+                        threats, drug possession and trafficking. Our services include:</p>
+                    <ul>
+                        <li>24 hour advice upon arrest by police</li>
+                        <li>assessment of the strength and weakness of criminal investigations</li>
+                        <li>bail applications to secure release from jail pending trial</li>
+                        <li>sentencing hearings</li>
+                        <li>conviction and sentence appeals</li>
+                        <li>professional disciplinary hearings</li>
+                        <li>plea negotiations with the prosecution</li>
+                    </ul>
+                    <p>We believe in every citizen’s right to be presumed innocent, to have a fair trial and to be treated fairly
+                        by the police and the courts.  DDSG will work hard to obtain the best available remedy for you, be it
+                        acquittal, termination of the charges or a plea resolution involving less serious charges or a more
+                        lenient sentence. At DDSG criminal lawyers you will be helped by experienced criminal lawyers in a
+                        professional, honest, confidential and affordable manner.</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Contrary to popular belief, Lorem Ipsum is not
+                        simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it
+                        over 2000 years old. Richard McClintock, a </p>
+                    <p>Latin professor at Hampden-Sydney College in
+                        Virginia, looked up one of the more obscure
+                        Latin words, consectetur, from a Lorem Ipsum
+                        passage, and going through the cites of the
+                        word in classical literature, discovered the
+                        undoubtable source. Lorem Ipsum comes from</p>
+                    <p>sections 1.10.32 and 1.10.33 of "de Finibus
+                        Bonorum et Malorum" (The Extremes of Good
+                        and Evil) by Cicero, written in 45 BC. This
+                        book is a treatise on the theory of ethics, very
+                        popular during the Renaissance. The first line
+                        of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                        comes from a line in section 1.10.32.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="results black" id="results">
+        <div class="container">
+            <h2>What our clients say</h2>
+            <div class="quote"><span class="fas fa-balance-scale-right"></span></div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100">
+                            <p class="testimonial">“My legal team did a great job working with me.
+                            Between myself, the case managers, and the attorneys,
+                            we were compatible and in sync from day one.
+                            I really appreciated that they met with me one-on-one.
+                            They accommodated me by meeting half way since
+                            I didn’t live close to their office.
+                            Whenever issues arose, I called and my case managers
+                            were easy to reach. They always answered my questions.
+                            I am very pleased with the service I received from Inga Oganezova.
+                            I would recommend her to my family and friends whenever they need professional representation.
+                            My friend had a different issue and I told him to call Inga.”
+                            </p>
+                            <div class="client">
+                                William D. - CHP Officer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <p class="testimonial">“My legal team did a great job working with me.
+                                Between myself, the case managers, and the attorneys,
+                                we were compatible and in sync from day one.
+                                I really appreciated that they met with me one-on-one.
+                                They accommodated me by meeting half way since
+                                I didn’t live close to their office.
+                                Whenever issues arose, I called and my case managers
+                                were easy to reach. They always answered my questions.
+                                I am very pleased with the service I received from Inga Oganezova.
+                                I would recommend her to my family and friends whenever they need professional representation.
+                                My friend had a different issue and I told him to call Inga.”
+                            </p>
+                            <div class="client">
+                                William D. - CHP Officer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100">
+                            <p class="testimonial">“My legal team did a great job working with me.
+                                Between myself, the case managers, and the attorneys,
+                                we were compatible and in sync from day one.
+                                I really appreciated that they met with me one-on-one.
+                                They accommodated me by meeting half way since
+                                I didn’t live close to their office.
+                                Whenever issues arose, I called and my case managers
+                                were easy to reach. They always answered my questions.
+                                I am very pleased with the service I received from Inga Oganezova.
+                                I would recommend her to my family and friends whenever they need professional representation.
+                                My friend had a different issue and I told him to call Inga.”
+                            </p>
+                            <div class="client">
+                                William D. - CHP Officer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about yellow" id="about">
+        <div class="container">
+            <div class="imgContainer">
+                <figure>
+                    <img src="images/ingaOganezova.jpg" alt="aboutImage">
+                </figure>
+            </div>
+            <div class="aboutContainer">
+                <h2>About</h2>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                    Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
+                    word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                    sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+                    and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                    comes from a line in section 1.10.32.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="footer white" id="contacts">
+        <div class="container">
+            <h2>Contacts</h2>
+<!--            <ul class="contactsList">-->
+<!--                <li>-->
+<!--                    <i class="fas fa-phone"></i>-->
+<!--                    <a id="phone" href="tel:+37499357753">(+374) 99 35 77 53</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <i class="fas fa-envelope"></i>-->
+<!--                    <a id="mail" href="mailto:oganezova@sb-law.am">oganezova@sb-law.am</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <i class="fab fa-linkedin"></i>-->
+<!--                    <a id="linkedin" href="https://www.linkedin.com/in/inga-oganezova-aa7345147/">Inga Oganezova</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <i class="fas fa-globe"></i>-->
+<!--                    <a id="website" href="https://ingaoganezova.com">www.ingaoganezova.com</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <i class="fas fa-gavel"></i>-->
+<!--                    <a id="github" href="http://sb-law.am/">SARDARYAN BROTHERS LAW OFFICE</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+            <div class="row">
+                <ul class="contactsList col-md-6">
+                    <li>
+                        <a id="phone" href="tel:+37499357753"><i class="fas fa-phone-alt"></i> (+374) 99 35 77 53</a>
+                    </li>
+                    <li>
+                        <a id="mail" href="mailto:oganezova@sb-law.am"><i class="fas fa-envelope"></i> oganezova@sb-law.am</a>
+                    </li>
+                    <li>
+                        <a id="linkedin" href="https://www.linkedin.com/in/inga-oganezova-aa7345147/"><i class="fab fa-linkedin"></i> Inga Oganezova</a>
+                    </li>
+                </ul>
+                <ul class="contactsList col-md-6">
+                    <li>
+                        <a id="website" href="https://ingaoganezova.com"><i class="fas fa-globe"></i> www.ingaoganezova.com</a>
+                    </li>
+                    <li>
+                        <a id="github" href="http://sb-law.am/"><i class="fas fa-gavel"></i> “Consigliere” Law Office LLC</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="copyright black">
+        <div class="container text-right">
+            <a href="https://ingaoganezova.com"><i class="far fa-copyright"></i> 2020, Inga Oganezova</a>
+        </div>
+    </footer>
+    <div class="upToTop">
+        <button class="up"><i class="fa fa-chevron-up"></i></button>
+    </div>
+<!--    <section class="content">-->
+<!--        <h1 class="text-center">Inga Oganezova's Personal Website</h1>-->
+<!--        <h2 class="text-center">Coming soon...</h2>-->
+<!--        <canvas id="canvas"></canvas>-->
+<!--    </section>-->
 </body>
 </html>
