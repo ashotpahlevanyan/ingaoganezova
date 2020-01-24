@@ -23,7 +23,7 @@
   //background-size: 100%;
   //background: $colorBlack url("../images/heroBackground.jpg") no-repeat;
   h1 {
-    font-size: 75px; // 20.709px;
+    font-size: $fs75; // 20.709px;
     color: $colorWhite;
     font-family: $ffLibertinage;
     text-align: right;

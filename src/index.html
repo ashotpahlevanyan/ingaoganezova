@@ -13,6 +13,22 @@
 
         gtag('config', 'UA-138601529-2');
     </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Adonts
+            var sb = {lat: 40.2102651, lng: 44.5251139};
+            // The map, centered at Adonts
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 17, center: sb});
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({position: sb, map: map});
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG0pYvonGdM7kJ86T1GgYIb4VlKzdLd38&callback=initMap">
+    </script>
+
 </head>
 <body>
     <header class="header">
@@ -61,9 +77,86 @@
     </section>
     <section class="services white" id="services">
         <div class="container">
-            <h2>Criminal Defence Lawyer</h2>
+            <h1>Criminal Defence Lawyer</h1>
             <div class="row">
                 <div class="col-md-8">
+                    <h3>Areas of Expertise</h3>
+                    <ul class="expertiseList">
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-gavel"></i></div>
+                                <h4>Criminal Defence</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-handshake"></i></div>
+                                <h4>Legal Services & Advice</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-briefcase"></i></div>
+                                <h4>Corporate Services</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-city"></i></div>
+                                <h4>Property Protection</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-briefcase-medical"></i></div>
+                                <h4>Insurance</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-balance-scale"></i></div>
+                                <h4>Judicial representation</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-leaf"></i></div>
+                                <h4>Environmental Protection</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-file-signature"></i></div>
+                                <h4>Legal Services</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="expertiseItem">
+                                <div><i class="fas fa-globe-europe"></i></div>
+                                <h4>International Services</h4>
+                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                            </div>
+                        </li>
+                    </ul>
+<!--                    <ul>-->
+<!--                        <li></li>-->
+<!--                        <li><i class="fas fa-city"></i></li>-->
+<!--                        <li><i class="fas fa-leaf"></i></li>-->
+<!--                        <li><i class="fab fa-pagelines"></i></li>-->
+<!--                        <li><i class="fas fa-file-contract"></i></li>-->
+<!--                        <li><i class="fas fa-handshake"></i></li>-->
+<!--                        <li><i class="fas fa-balance-scale"></i></li>-->
+<!--                        <li><i class="fas fa-file-signature"></i></li>-->
+<!--                        <li><i class="fas fa-briefcase-medical"></i></li>-->
+<!--                    </ul>-->
                     <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest
                         criminal law firms. We defend our clients against all criminal allegations, at all trial
                         and appeal courts including the Supreme Court of Canada. Our lawyers travel across
@@ -72,15 +165,7 @@
                     <p>For over 30 years we have defended thousands of clients accused with criminal offences such as
                         theft, assault, impaired driving (DUI),  sexual assault, internet crimes, murder, fraud, uttering
                         threats, drug possession and trafficking. Our services include:</p>
-                    <ul>
-                        <li>24 hour advice upon arrest by police</li>
-                        <li>assessment of the strength and weakness of criminal investigations</li>
-                        <li>bail applications to secure release from jail pending trial</li>
-                        <li>sentencing hearings</li>
-                        <li>conviction and sentence appeals</li>
-                        <li>professional disciplinary hearings</li>
-                        <li>plea negotiations with the prosecution</li>
-                    </ul>
+
                     <p>We believe in every citizen’s right to be presumed innocent, to have a fair trial and to be treated fairly
                         by the police and the courts.  DDSG will work hard to obtain the best available remedy for you, be it
                         acquittal, termination of the charges or a plea resolution involving less serious charges or a more
@@ -88,23 +173,16 @@
                         professional, honest, confidential and affordable manner.</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Contrary to popular belief, Lorem Ipsum is not
-                        simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it
-                        over 2000 years old. Richard McClintock, a </p>
-                    <p>Latin professor at Hampden-Sydney College in
-                        Virginia, looked up one of the more obscure
-                        Latin words, consectetur, from a Lorem Ipsum
-                        passage, and going through the cites of the
-                        word in classical literature, discovered the
-                        undoubtable source. Lorem Ipsum comes from</p>
-                    <p>sections 1.10.32 and 1.10.33 of "de Finibus
-                        Bonorum et Malorum" (The Extremes of Good
-                        and Evil) by Cicero, written in 45 BC. This
-                        book is a treatise on the theory of ethics, very
-                        popular during the Renaissance. The first line
-                        of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                        comes from a line in section 1.10.32.</p>
+                    <h3>Services</h3>
+                    <ul class="servicesList">
+                        <li><i class="fas fa-check"></i> 24 hour advice upon arrest by police</li>
+                        <li><i class="fas fa-check"></i> Assessment of the strength and weakness of criminal investigations</li>
+                        <li><i class="fas fa-check"></i> Bail applications to secure release from jail pending trial</li>
+                        <li><i class="fas fa-check"></i> Sentencing hearings</li>
+                        <li><i class="fas fa-check"></i> Conviction and sentence appeals</li>
+                        <li><i class="fas fa-check"></i> Professional disciplinary hearings</li>
+                        <li><i class="fas fa-check"></i> Plea negotiations with the prosecution</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -141,20 +219,14 @@
                     </div>
                     <div class="carousel-item">
                         <div class="d-block w-100">
-                            <p class="testimonial">“My legal team did a great job working with me.
-                                Between myself, the case managers, and the attorneys,
-                                we were compatible and in sync from day one.
-                                I really appreciated that they met with me one-on-one.
-                                They accommodated me by meeting half way since
-                                I didn’t live close to their office.
-                                Whenever issues arose, I called and my case managers
-                                were easy to reach. They always answered my questions.
-                                I am very pleased with the service I received from Inga Oganezova.
-                                I would recommend her to my family and friends whenever they need professional representation.
-                                My friend had a different issue and I told him to call Inga.”
+                            <p class="testimonial">“As a police officer, I knew by reputation
+                                that Inga Oganezova was very aggressive in fighting for their clients.
+                                I was very grateful when Ms. Oganezova was able to personally take the time
+                                to speak with me and agreed to take my case.
+                                I was very satisfied with results Ms. Oganezova achieved for my case and the entire staff at Sardaryan Brothers.”
                             </p>
                             <div class="client">
-                                William D. - CHP Officer
+                                Robert L.J. – Retired L.A.P.D Officer
                             </div>
                         </div>
                     </div>
@@ -195,20 +267,107 @@
                 <figure>
                     <img src="images/ingaOganezova.jpg" alt="aboutImage">
                 </figure>
+                <h3 class="text-center">Inga Oganezova</h3>
             </div>
             <div class="aboutContainer">
                 <h2>About</h2>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                    Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
-                    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
-                    word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
-                    sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
-                    and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-                    comes from a line in section 1.10.32.
-                </p>
+                <ul class="aboutList">
+                    <li>
+                        <h3>Career</h3>
+                        <ul>
+                            <li><label>Oct 2017 - </label>, Attorney At Law, Yerevan Municipality</li>
+                            <li><label>Oct 2015 - </label>, Attorney At Law, “Consigliere” Law Office (Sardaryan Brothers)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Education</h3>
+                        <ul>
+                            <li><label>2016 - 2017</label>, "Criminal Law", School of Advocates of RA</li>
+                            <li><label>2014 - 2016</label>, MSc, "Law, Criminal procedure", Russian – Armenian (Slavonic) University</li>
+                            <li><label>2010 - 2014</label>, BSc, "Management", Russian – Armenian (Slavonic) University</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>
+                                <label>25.11.2017</label>,
+                                License: <label>N 2367</label>, Chamber of Advocates of the Republic of Armenia
+                                <ul class="expertises">
+                                    <li><i class="fas fa-check"></i> All kinds of Criminal cases</li>
+                                    <li><i class="fas fa-check"></i> All kinds of Civil cases</li>
+                                    <li><i class="fas fa-check"></i> All kinds of Administrative cases</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--<div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Practice
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Education
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Certificates
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="license">License: N2367</div>
+                                <div class="date">Was Given: 25.11.2017</div>
+                                <ul class="expertizes">
+                                    <li>All kinds of Criminal cases</li>
+                                    <li>All kinds of Civil cases</li>
+                                    <li>All kinds of Administrative cases</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
+        </div>
+        <div class="container">
+            <p class="aboutDescription">Practicing Attorney at Law, with extensive experience in
+                Criminal, Civil, Administrative, Legal
+                (Individuals and Companies), Environmental, International Laws,
+                as well as other areas of Armenian and International Legislation.
+                Adhere to Aggressive defence style, preparing thoroughly
+                for each individual case, investigating specificities
+                and getting the most possible benefits for my clients.
+                Always communicate openly what can be achieved and what might not.
+                No surprises or hidden costs.
+                You pay only when we win or settle your case.
+            </p>
         </div>
     </section>
     <section class="footer white" id="contacts">
@@ -245,7 +404,7 @@
                         <a id="mail" href="mailto:oganezova@sb-law.am"><i class="fas fa-envelope"></i> oganezova@sb-law.am</a>
                     </li>
                     <li>
-                        <a id="linkedin" href="https://www.linkedin.com/in/inga-oganezova-aa7345147/"><i class="fab fa-linkedin"></i> Inga Oganezova</a>
+                        <a id="address" href="https://www.google.com/maps/place/7,+1+Nikoghayos+Adonts+St,+Yerevan+0014,+%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/@40.2098294,44.5263424,17z/data=!3m1!4b1!4m5!3m4!1s0x406aa2cbf31b85ad:0x77fbc66e3f6a4f82!8m2!3d40.2098294!4d44.5285311"><i class="fas fa-address-card"></i> Adonts Street 7/1, Yerevan, 375012, Armenia</a>
                     </li>
                 </ul>
                 <ul class="contactsList col-md-6">
@@ -253,10 +412,14 @@
                         <a id="website" href="https://ingaoganezova.com"><i class="fas fa-globe"></i> www.ingaoganezova.com</a>
                     </li>
                     <li>
+                        <a id="linkedin" href="https://www.linkedin.com/in/inga-oganezova-aa7345147/"><i class="fab fa-linkedin"></i> Inga Oganezova</a>
+                    </li>
+                    <li>
                         <a id="github" href="http://sb-law.am/"><i class="fas fa-gavel"></i> “Consigliere” Law Office LLC</a>
                     </li>
                 </ul>
             </div>
+            <div id="map" class="map"></div>
         </div>
     </section>
     <footer class="copyright black">

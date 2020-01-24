@@ -6,6 +6,18 @@
     align-items: flex-start;
     justify-content: space-between;
   }
+  h2 {
+    font-family: $ffLibertinage;
+    font-size: $fs48;
+    line-height: 1.2;
+    color: $colorBlack;
+  }
+  h3 {
+    font-family: $ffTrajanPro-Regular;
+    font-size: $fs26;
+    line-height: 1.2;
+    color: $colorBlack;
+  }
   .imgContainer {
 
     figure {
@@ -21,17 +33,38 @@
   .aboutContainer {
     @extend .p20-0;
     margin-left: 30px;
-    h2 {
-      font-family: $ffLibertinage;
-      font-size: $fs48;
-      line-height: 1.2;
-      color: $colorBlack;
-    }
     p {
       font-size: $fs18;
       line-height: 1.5;
       margin-bottom: 0;
     }
+  }
+  .aboutList {
+    padding-left: 15px;
+    label {
+      font-weight: bold;
+      font-size: $fs18;;
+    }
+    & > li {
+      display: block;
+      & + li {
+        margin-top: 20px;
+      }
+    }
+    ul {
+      padding-left: 15px;
+      li {
+        font-size: $fs18;
+        display: block;
+      }
+    }
+  }
+  .aboutDescription {
+    font-size: $fs18;
+  }
+
+  .expertises {
+    padding-left: 0 !important;
   }
 }
 

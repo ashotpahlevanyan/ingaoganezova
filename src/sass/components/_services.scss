@@ -1,12 +1,84 @@
 .services {
   @extend .p40-0;
-
+  h1 {
+    font-family: $ffLibertinage;
+    font-size: $fs75;
+    line-height: 1.2;
+    color: $colorBlack;
+    margin-bottom: 30px;
+  }
   h2 {
     font-family: $ffLibertinage;
     font-size: $fs48;
     line-height: 1.2;
     color: $colorBlack;
     margin-bottom: 20px;
+  }
+
+  h3 {
+    font-family: $ffTrajanPro-Regular;
+    font-size: $fs36;
+    line-height: 1.2;
+    color: $colorBlack;
+    margin-bottom: 20px;
+  }
+
+  .servicesList {
+    padding-left: 0;
+    li {
+      position: relative;
+      padding: 10px 10px 10px 45px;
+      display: block;
+      vertical-align: baseline;
+      font-size: $fs18;
+      .fas {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        color: $colorYellowBrand;
+        font-size: $fs24;
+      }
+    }
+  }
+
+  .expertiseList {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-basis: 30px;
+
+    li {
+      max-width: calc(33.33% - 10px);
+      flex: 0 1 auto;
+      text-align: center;
+      margin-bottom: 20px;
+      border: 5px solid $colorYellowBrand;
+      @include border-radius(5px);
+      .expertiseItem {
+        padding: 20px 15px 10px;
+        background-color: $colorWhite;
+        @include border-radius(5px);
+      }
+      .fas, .fab {
+        font-size: $fs40;
+        color: $colorYellowBrand;
+        margin-bottom: 30px;
+      }
+      h4 {
+        font-family: $ffTrajanPro-Regular;
+        font-size: $fs22;
+        line-height: 1.2;
+        color: $colorBlack;
+        margin-bottom: 20px;
+      }
+      p {
+        text-align: left;
+      }
+    }
   }
 }
 
