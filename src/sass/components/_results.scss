@@ -1,14 +1,4 @@
 .results {
-  @extend .p40-0;
-  * {
-    color: $colorWhite;
-  }
-  h2 {
-    font-family: $ffLibertinage;
-    font-size: $fs48;
-    line-height: 1.2;
-    margin-bottom: 50px;
-  }
   .testimonial {
     font-size: $fs20;
     line-height: 1.6;
@@ -17,14 +7,6 @@
   .client {
     font-size: $fs22;
     color: $colorYellowBrand;
-  }
-  .quote {
-    text-align: center;
-    margin-bottom: 30px;
-    .fas {
-      font-size: $fs60;
-      color: $colorYellowBrand;
-    }
   }
   .carousel {
     position: relative;
@@ -68,6 +50,4 @@
       }
     }
   }
-
 }
-

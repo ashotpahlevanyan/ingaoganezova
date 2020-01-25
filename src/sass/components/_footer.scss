@@ -1,13 +1,5 @@
 .footer {
-  @extend .p30-0;
-  h2 {
-    color: $colorBlack;
-    font-family: $ffLibertinage;
-    font-size: $fs48;
-    margin-bottom: 20px;
-  }
   .contactsList {
-    //@extend .p30-0;
     li {
       display: block;
       & + li {

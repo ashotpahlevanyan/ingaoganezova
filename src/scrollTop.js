@@ -4,6 +4,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         scrollTopValue = $(window).scrollTop();
         if(scrollTopValue > 200) {
+            $(".header").addClass("fixed");
             if(!upToTop.hasClass("show")) {
                 upToTop.addClass("show");
             }
@@ -11,6 +12,7 @@ $(document).ready(function(){
             if(upToTop.hasClass("show")) {
                 upToTop.removeClass("show");
             }
+            $(".header").removeClass("fixed");
         }
     });
     $(".upToTop .up").on("click", function(){
@@ -30,5 +32,7 @@ $(document).ready(function(){
             top: scrollTopValue + 1,
             behavior: "smooth"
         });
+        $(".nav-item").removeClass("active");
+        $(this).parent().addClass("active");
     });
 });

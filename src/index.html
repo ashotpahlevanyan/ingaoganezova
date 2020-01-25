@@ -33,7 +33,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!-- id="list-example"-->
                 <a class="navbar-brand" href="/">
                     <figure class="logo">
                         <img src="./images/logo.png" alt="logo">
@@ -47,7 +47,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link active" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#expertise">Expertise <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#approach">Approach <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
@@ -55,9 +61,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#results">Results <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link" href="#law">The Law </a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About </a>
                         </li>
@@ -69,111 +75,120 @@
             </nav>
         </div>
     </header>
+    <!--<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">-->
     <section class="hero" id="hero">
         <img src="images/heroBackground.jpg" alt="hero" class="heroBackground">
         <div class="container sloganWrapper1">
             <h1>Your <span class="yell">R</span>ights and <span class="yell">F</span>reedom<br>is our <span class="yell">P</span>riority</h1>
         </div>
     </section>
-    <section class="services white" id="services">
+    <section class="section expertise white" id="expertise">
         <div class="container">
-            <h1>Criminal Defence Lawyer</h1>
-            <div class="row">
-                <div class="col-md-8">
-                    <h3>Areas of Expertise</h3>
-                    <ul class="expertiseList">
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-gavel"></i></div>
-                                <h4>Criminal Defence</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-handshake"></i></div>
-                                <h4>Legal Services & Advice</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-briefcase"></i></div>
-                                <h4>Corporate Services</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-city"></i></div>
-                                <h4>Property Protection</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-briefcase-medical"></i></div>
-                                <h4>Insurance</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-balance-scale"></i></div>
-                                <h4>Judicial representation</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-leaf"></i></div>
-                                <h4>Environmental Protection</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-file-signature"></i></div>
-                                <h4>Legal Services</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="expertiseItem">
-                                <div><i class="fas fa-globe-europe"></i></div>
-                                <h4>International Services</h4>
-                                <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
-                            </div>
-                        </li>
-                    </ul>
-<!--                    <ul>-->
-<!--                        <li></li>-->
-<!--                        <li><i class="fas fa-city"></i></li>-->
-<!--                        <li><i class="fas fa-leaf"></i></li>-->
-<!--                        <li><i class="fab fa-pagelines"></i></li>-->
-<!--                        <li><i class="fas fa-file-contract"></i></li>-->
-<!--                        <li><i class="fas fa-handshake"></i></li>-->
-<!--                        <li><i class="fas fa-balance-scale"></i></li>-->
-<!--                        <li><i class="fas fa-file-signature"></i></li>-->
-<!--                        <li><i class="fas fa-briefcase-medical"></i></li>-->
-<!--                    </ul>-->
-                    <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest
-                        criminal law firms. We defend our clients against all criminal allegations, at all trial
-                        and appeal courts including the Supreme Court of Canada. Our lawyers travel across
-                        Alberta and the N.W.T. (and beyond) to represent our clients. We have over 100 years
-                        of criminal trial and appeal court experience.</p>
-                    <p>For over 30 years we have defended thousands of clients accused with criminal offences such as
-                        theft, assault, impaired driving (DUI),  sexual assault, internet crimes, murder, fraud, uttering
-                        threats, drug possession and trafficking. Our services include:</p>
+            <h2>Areas of Expertise</h2>
+            <ul class="expertiseList">
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-gavel"></i></div>
+                        <h4>Criminal Defence</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-handshake"></i></div>
+                        <h4>Legal Services & Advice</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-briefcase"></i></div>
+                        <h4>Corporate Services</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-city"></i></div>
+                        <h4>Property Protection</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-briefcase-medical"></i></div>
+                        <h4>Insurance</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-balance-scale"></i></div>
+                        <h4>Judicial representation</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-leaf"></i></div>
+                        <h4>Environmental Protection</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-user-tie"></i></div>
+                        <h4>Employment Law & Advice</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="expertiseItem">
+                        <div><i class="fas fa-globe-europe"></i></div>
+                        <h4>International Services</h4>
+                        <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest criminal law firms. We defend our clients against all criminal allegations, at all trial and appeal</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section approach yellow" id="approach">
+        <div class="container">
+            <h2>Approach</h2>
+            <div class="quote"><span class="fas fa-hand-holding-heart"></span></div>
+            <!--<h3 class="text-center"><i class="fas fa-hand-holding-heart"></i></h3>-->
+            <p>DDSG Criminal Law (Dawson Duckett Garcia & Johnson) is one of Canada’s largest
+                criminal law firms. We defend our clients against all criminal allegations, at all trial
+                and appeal courts including the Supreme Court of Canada. Our lawyers travel across
+                Alberta and the N.W.T. (and beyond) to represent our clients. We have over 100 years
+                of criminal trial and appeal court experience.</p>
+            <p>For over 30 years we have defended thousands of clients accused with criminal offences such as
+                theft, assault, impaired driving (DUI),  sexual assault, internet crimes, murder, fraud, uttering
+                threats, drug possession and trafficking. Our services include:</p>
 
-                    <p>We believe in every citizen’s right to be presumed innocent, to have a fair trial and to be treated fairly
-                        by the police and the courts.  DDSG will work hard to obtain the best available remedy for you, be it
-                        acquittal, termination of the charges or a plea resolution involving less serious charges or a more
-                        lenient sentence. At DDSG criminal lawyers you will be helped by experienced criminal lawyers in a
-                        professional, honest, confidential and affordable manner.</p>
+            <p>We believe in every citizen’s right to be presumed innocent, to have a fair trial and to be treated fairly
+                by the police and the courts.  DDSG will work hard to obtain the best available remedy for you, be it
+                acquittal, termination of the charges or a plea resolution involving less serious charges or a more
+                lenient sentence. At DDSG criminal lawyers you will be helped by experienced criminal lawyers in a
+                professional, honest, confidential and affordable manner.</p>
+        </div>
+    </section>
+    <section class="section services white" id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="servicesList">
+                        <li><i class="fas fa-check"></i> 24 hour advice upon arrest by police</li>
+                        <li><i class="fas fa-check"></i> Assessment of the strength and weakness of criminal investigations</li>
+                        <li><i class="fas fa-check"></i> Bail applications to secure release from jail pending trial</li>
+                        <li><i class="fas fa-check"></i> Sentencing hearings</li>
+                        <li><i class="fas fa-check"></i> Conviction and sentence appeals</li>
+                        <li><i class="fas fa-check"></i> Professional disciplinary hearings</li>
+                        <li><i class="fas fa-check"></i> Plea negotiations with the prosecution</li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <h3>Services</h3>
+                <div class="col-md-6">
                     <ul class="servicesList">
                         <li><i class="fas fa-check"></i> 24 hour advice upon arrest by police</li>
                         <li><i class="fas fa-check"></i> Assessment of the strength and weakness of criminal investigations</li>
@@ -187,7 +202,7 @@
             </div>
         </div>
     </section>
-    <section class="results black" id="results">
+    <section class="section results black" id="results">
         <div class="container">
             <h2>What our clients say</h2>
             <div class="quote"><span class="fas fa-balance-scale-right"></span></div>
@@ -261,16 +276,17 @@
             </div>
         </div>
     </section>
-    <section class="about yellow" id="about">
+    <section class="section about yellow" id="about">
         <div class="container">
             <div class="imgContainer">
                 <figure>
                     <img src="images/ingaOganezova.jpg" alt="aboutImage">
                 </figure>
                 <h3 class="text-center">Inga Oganezova</h3>
+                <h5 class="text-center">Criminal Defence Lawyer</h5>
             </div>
             <div class="aboutContainer">
-                <h2>About</h2>
+                <h2 class="bold">About</h2>
                 <ul class="aboutList">
                     <li>
                         <h3>Career</h3>
@@ -302,58 +318,6 @@
                         </ul>
                     </li>
                 </ul>
-
-                <!--<div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Practice
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Education
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Certificates
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="license">License: N2367</div>
-                                <div class="date">Was Given: 25.11.2017</div>
-                                <ul class="expertizes">
-                                    <li>All kinds of Criminal cases</li>
-                                    <li>All kinds of Civil cases</li>
-                                    <li>All kinds of Administrative cases</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
         <div class="container">
@@ -370,31 +334,9 @@
             </p>
         </div>
     </section>
-    <section class="footer white" id="contacts">
+    <section class="section footer white" id="contacts">
         <div class="container">
             <h2>Contacts</h2>
-<!--            <ul class="contactsList">-->
-<!--                <li>-->
-<!--                    <i class="fas fa-phone"></i>-->
-<!--                    <a id="phone" href="tel:+37499357753">(+374) 99 35 77 53</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <i class="fas fa-envelope"></i>-->
-<!--                    <a id="mail" href="mailto:oganezova@sb-law.am">oganezova@sb-law.am</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <i class="fab fa-linkedin"></i>-->
-<!--                    <a id="linkedin" href="https://www.linkedin.com/in/inga-oganezova-aa7345147/">Inga Oganezova</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <i class="fas fa-globe"></i>-->
-<!--                    <a id="website" href="https://ingaoganezova.com">www.ingaoganezova.com</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <i class="fas fa-gavel"></i>-->
-<!--                    <a id="github" href="http://sb-law.am/">SARDARYAN BROTHERS LAW OFFICE</a>-->
-<!--                </li>-->
-<!--            </ul>-->
             <div class="row">
                 <ul class="contactsList col-md-6">
                     <li>
@@ -422,7 +364,7 @@
             <div id="map" class="map"></div>
         </div>
     </section>
-    <footer class="copyright black">
+    <footer class="section copyright black">
         <div class="container text-right">
             <a href="https://ingaoganezova.com"><i class="far fa-copyright"></i> 2020, Inga Oganezova</a>
         </div>
@@ -430,6 +372,7 @@
     <div class="upToTop">
         <button class="up"><i class="fa fa-chevron-up"></i></button>
     </div>
+    <!--</div>-->
 <!--    <section class="content">-->
 <!--        <h1 class="text-center">Inga Oganezova's Personal Website</h1>-->
 <!--        <h2 class="text-center">Coming soon...</h2>-->

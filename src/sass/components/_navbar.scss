@@ -1,6 +1,17 @@
 .header {
   display: block;
   background-color: $colorBlack;
+  &.fixed {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    //background-color: $colorWhite;
+    //* {
+    //  color: $colorBlack;
+    //}
+  }
 }
 .navbar-brand {
   .logo {

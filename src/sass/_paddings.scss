@@ -9,3 +9,18 @@
 .p20-0 {
   padding: 20px 0;
 }
+
+@media (max-width: $screen-xs-max) {
+  .p40-0 {
+    padding: 30px 0;
+  }
+
+  .p30-0 {
+    padding: 20px 0;
+  }
+
+  .p20-0 {
+    padding: 10px 0;
+  }
+}
+

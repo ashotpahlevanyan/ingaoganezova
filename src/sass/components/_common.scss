@@ -1,0 +1,36 @@
+.section {
+  @extend .p40-0;
+
+  &.white {
+    background-color: $colorWhite;
+    * {
+      color: $colorBlack;
+    }
+  }
+  &.black {
+    background-color: $colorBlack;
+    * {
+      color: $colorWhite;
+    }
+  }
+  &.yellow {
+    background-color: $colorYellowBrand;
+  }
+}
+
+.quote {
+  text-align: center;
+  margin-bottom: 30px;
+  .fas {
+    font-size: $fs60;
+    color: $colorYellowBrand;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .section {
+    &.black {
+      background-color: $colorBlackLight;
+    }
+  }
+}

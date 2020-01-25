@@ -23,21 +23,9 @@ canvas{
   right: 0;
   bottom: 0;
 }
-h1 {
-  margin-bottom: 30px;
-}
 
 @media (orientation: portrait) {
   .content {
     padding: 40% 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  h1 {
-    font-size: $fs26;
-  }
-  h2 {
-    font-size: $fs22;
   }
 }

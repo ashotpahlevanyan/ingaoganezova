@@ -1,32 +1,22 @@
 .about {
-  @extend .p40-0;
   .container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   }
-  h2 {
-    font-family: $ffLibertinage;
-    font-size: $fs48;
-    line-height: 1.2;
-    color: $colorBlack;
-  }
-  h3 {
-    font-family: $ffTrajanPro-Regular;
-    font-size: $fs26;
-    line-height: 1.2;
-    color: $colorBlack;
-  }
+
   .imgContainer {
 
     figure {
       width: 300px;
       height: 350px;
+      margin: 0 auto;
     }
     img {
+      @include border-radius(10px);
       width: 100%;
-      height: 100%;
+      height: auto; // 100%;
       object-fit: contain;
     }
   }
@@ -40,7 +30,7 @@
     }
   }
   .aboutList {
-    padding-left: 15px;
+    padding-left: 0;
     label {
       font-weight: bold;
       font-size: $fs18;;
