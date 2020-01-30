@@ -1,16 +1,58 @@
 .header {
   display: block;
   background-color: $colorBlack;
+  top: -100%;
+  transition: top 0.5s ease;
   &.fixed {
     position: fixed;
     z-index: 5;
     top: 0;
     left: 0;
     right: 0;
-    //background-color: $colorWhite;
+    background-color: $colorWhite;
+    border-bottom: 2px solid $colorYellowBrand;
+    transition: top 0.5s ease;
     //* {
     //  color: $colorBlack;
     //}
+    .navbar-brand {
+      .logo {
+        width: 180px;
+        .invert {
+          display: inline;
+        }
+
+        .initial {
+          display: none;
+        }
+      }
+    }
+
+    .navbar {
+      .navbar-toggler {
+        border: 1px solid $colorBlackLight;
+        color: $colorBlack;
+      }
+
+      .navbar-nav {
+        padding-top: 30px;
+        .nav-item {
+          &.active {
+            a {
+              color: $colorYellowBrand;
+            }
+          }
+          a {
+            color: $colorBlack;
+            &:hover,
+            &:focus {
+              text-decoration: underline;
+              color: $colorYellowBrand;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .navbar-brand {
