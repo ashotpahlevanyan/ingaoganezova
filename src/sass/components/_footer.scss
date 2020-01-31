@@ -31,5 +31,9 @@
     &.show {
       display: block;
     }
+
+    iframe {
+      @include border-radius(10px);
+    }
   }
 }

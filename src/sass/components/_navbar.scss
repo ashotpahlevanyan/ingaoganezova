@@ -37,15 +37,10 @@
       .navbar-nav {
         padding-top: 30px;
         .nav-item {
-          &.active {
-            a {
-              color: $colorYellowBrand;
-            }
-          }
           a {
             color: $colorBlack;
-            &:hover,
-            &:focus {
+
+            &:hover {
               text-decoration: underline;
               color: $colorYellowBrand;
             }
@@ -108,12 +103,15 @@
       a {
         color: $colorWhite;
         font-family: $ffTrajanPro-Regular;
-        &:hover,
-        &:focus {
+        &:hover {
           text-decoration: underline;
           color: $colorYellowBrand;
         }
       }
+    }
+    .nav-link.active {
+      text-decoration: underline;
+      color: $colorYellowBrand !important;
     }
   }
 
