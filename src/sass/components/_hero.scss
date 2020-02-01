@@ -1,0 +1,69 @@
+.hero {
+  //background: $colorBlack;
+  //background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,153,153,1) 40%, rgba(92,92,92,1) 60%, rgba(0,0,0,1) 100%);
+  background-color: $colorBlack;
+  position: relative;
+  text-align: center;
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .heroBackground {
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  //background-size: 100%;
+  //background: $colorBlack url("../images/heroBackground.jpg") no-repeat;
+  h1 {
+    font-size: $fs75; // 20.709px;
+    color: $colorWhite;
+    font-family: $ffLibertinage;
+    text-align: right;
+    line-height: 1.2;
+    margin-bottom: 100px;
+    //-moz-transform: matrix( 4.00639301255122,0,0,4.01409222440427,0,0);
+    //-webkit-transform: matrix( 4.00639301255122,0,0,4.01409222440427,0,0);
+    //-ms-transform: matrix( 4.00639301255122,0,0,4.01409222440427,0,0);
+    //transform: matrix( 4.00639301255122,0,0,4.01409222440427,0,0);
+  }
+  //.yell {
+  //  color: $colorYellowBrand;
+  //}
+}
+
+@media (max-width: $screen-smm-max) {
+  .hero {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+  }
+  //.yell {
+  //  color: $colorYellowBrand;
+  //}
+}
+
+@media (max-width: $screen-xs-max) {
+  .hero {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $screen-xxs-max) {
+  .hero {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

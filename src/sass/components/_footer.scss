@@ -1,0 +1,39 @@
+.footer {
+  .contactsList {
+    li {
+      display: block;
+      & + li {
+        margin-top: 20px;
+      }
+
+      a {
+        color: $colorBlack;
+        font-size: $fs18;
+        &:hover,
+        &:focus {
+          color: $colorYellowBrand;
+          text-decoration: underline;
+        }
+      }
+      .fab, .fas {
+        color: $colorYellowBrand;
+        font-size: $fs30;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+  .map {
+    display: none;
+    @include border-radius(10px);
+    width: 100%;
+    height: 300px;
+    &.show {
+      display: block;
+    }
+
+    iframe {
+      @include border-radius(10px);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.results {
+  .testimonial {
+    font-size: $fs20;
+    line-height: 1.6;
+    min-height: 200px;
+  }
+  .client {
+    font-size: $fs22;
+    color: $colorYellowBrand;
+  }
+  .carousel {
+    position: relative;
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: -40px;
+      left: auto;
+      bottom: auto;
+      width: auto;
+      opacity: 1;
+
+      .fas {
+        font-size: $fs24;
+      }
+
+      &:hover,
+      &:focus {
+        .fas {
+          color: $colorYellowBrand;
+        }
+      }
+    }
+    .carousel-control-prev {
+      right: 60px;
+    }
+    .carousel-control-next {
+      right: 20px;
+    }
+
+    .carousel-indicators {
+      left: auto;
+      margin-right: unset;
+      margin-left: unset;
+      bottom: -40px;
+      li {
+        opacity: 1;
+        &.active {
+          background-color: $colorYellowBrand;
+        }
+      }
+    }
+  }
+}

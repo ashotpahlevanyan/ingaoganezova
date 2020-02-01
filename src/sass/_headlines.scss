@@ -1,0 +1,103 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: $ffTrajanPro-Regular;
+
+  &.soft {
+    font-family: $ffLibertinage;
+  }
+}
+
+h1 {
+  font-size: $fs48;
+  margin-bottom: 50px;
+
+  &.soft {
+    font-size: $fs75;
+  }
+}
+
+h2 {
+  font-size: $fs36;
+  margin-bottom: 30px;
+
+  &.soft {
+    font-size: $fs48;
+  }
+}
+
+h3 {
+  font-size: $fs30;
+  margin-bottom: 20px;
+
+  &.soft {
+    font-size: $fs36;
+  }
+}
+
+h4 {
+  font-size: $fs26;
+  margin-bottom: 10px;
+
+  &.soft {
+    font-size: $fs30;
+  }
+}
+
+h5 {
+  font-size: $fs22;
+  margin-bottom: 10px;
+}
+
+h6 {
+  font-size: $fs18;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: $fs30;
+    margin-bottom: 30px;
+
+    &.soft {
+      font-size: $fs48;
+    }
+  }
+
+  h2 {
+    font-size: $fs26;
+    margin-bottom: 20px;
+
+    &.soft {
+      font-size: $fs36;
+    }
+  }
+
+  h3 {
+    font-size: $fs22;
+    margin-bottom: 15px;
+
+    &.soft {
+      font-size: $fs30;
+    }
+  }
+
+  h4 {
+    font-size: $fs18;
+    margin-bottom: 10px;
+
+    &.soft {
+      font-size: $fs26;
+    }
+  }
+
+  h5 {
+    font-size: $fs16;
+  }
+
+  h6 {
+    font-size: $fs16;
+  }
+}
+

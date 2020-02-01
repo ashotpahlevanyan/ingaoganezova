@@ -27,3 +27,11 @@ $font-weight: 400, $font-style: normal, $support-required: 'oldie') {
     @error 'Invalid support-required value. Must be "oldie"==>IE8 and above/ Android native browser 4+/ Safari 4.3 OR "recent"==>IE9+/ Android native browser 4.0+/ Safari 4.3+ OR "modern"==>IE9+/ Android native browser 4.4+/ Safari 5.1+';
   }
 }
+
+/* --- Libertinage --- */
+@include font-face("Libertinage", "../fonts/Libertinage", 400, normal, "oldie");
+
+/* --- TrejanPro-Regular --- */
+@include font-face("TrejanPro-Regular", "../fonts/TrajanPro-Regular", 400, normal, "oldie");
+
+

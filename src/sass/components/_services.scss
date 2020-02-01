@@ -1,0 +1,36 @@
+.services {
+  .servicesList {
+    padding-left: 0;
+    li {
+      position: relative;
+      padding: 10px 10px 10px 45px;
+      display: block;
+      vertical-align: baseline;
+      font-size: $fs18;
+      .fas {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        color: $colorYellowBrand;
+        font-size: $fs24;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .services {
+    .servicesList {
+      li {
+        position: relative;
+        padding: 10px 10px 10px 35px;
+        font-size: $fs16;
+
+        .fas {
+          top: 8px;
+          font-size: $fs20;
+        }
+      }
+    }
+  }
+}

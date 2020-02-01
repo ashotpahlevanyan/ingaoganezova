@@ -7,4 +7,5 @@ import 'bootstrap-fileinput/js/fileinput.min';
 import './sass/main.scss'
 
 import './script';
+//import './scrollTop';
 

@@ -1,0 +1,67 @@
+.expertise {
+  .expertiseList {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-basis: 30px;
+
+    li {
+      max-width: calc(33.33% - 10px);
+      flex: 0 1 auto;
+      text-align: center;
+      margin-bottom: 20px;
+      border: 5px solid $colorYellowBrand;
+      @include border-radius(5px);
+      .expertiseItem {
+        padding: 20px 15px 20px;
+        background-color: $colorWhite;
+        @include border-radius(5px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .fas, .fab {
+        font-size: $fs40;
+        color: $colorYellowBrand;
+        margin-bottom: 30px;
+      }
+      .handcuffs {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+      p {
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-smm-max) {
+  .expertise {
+    .expertiseList {
+      li {
+        max-width: calc(50% - 10px);
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .expertise {
+    .expertiseList {
+      li {
+        width: 100%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

@@ -1,73 +1,175 @@
 .header {
-  display: none;
+  display: block;
+  background-color: $colorBlack;
+  top: -100%;
+  transition: top 0.5s ease;
+  &.fixed {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $colorWhite;
+    border-bottom: 2px solid $colorYellowBrand;
+    transition: top 0.5s ease;
+    //* {
+    //  color: $colorBlack;
+    //}
+    .navbar-brand {
+      .logo {
+        width: 180px;
+        .invert {
+          display: inline;
+        }
+
+        .initial {
+          display: none;
+        }
+      }
+    }
+
+    .navbar {
+      .navbar-toggler {
+        border: 1px solid $colorBlackLight;
+        color: $colorBlack;
+      }
+
+      .navbar-nav {
+        padding-top: 30px;
+        .nav-item {
+          a {
+            color: $colorBlack;
+
+            &:hover {
+              text-decoration: underline;
+              color: $colorYellowBrand;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-brand {
+  .logo {
+    width: 250px;
+    height: auto;
+    position: relative;
+    padding-left: 0;
+  }
 }
 .navbar {
+  padding: 0.5rem 0;
+
   .navbar-toggler {
-    border: 1px solid $colorBrand;
-    color: $colorBrand;
-    width: 45px;
-    height: 40px;
+    border: 1px solid $colorWhite;
+    color: $colorWhite;
+    width: 40px;
+    height: 35px;
     padding: 3px 2px;
 
     .fas {
-      font-size: 28px;
+      font-size: $fs26;
     }
 
-    .fa-times {
+    .fa-times, .fa-balance-scale-left {
       display: inline;
     }
 
-    .fa-bars {
+    .fa-bars, .fa-balance-scale {
       display: none;
     }
 
     &.collapsed {
-      .fa-times {
+      .fa-times, .fa-balance-scale-left {
         display: none;
       }
 
-      .fa-bars {
+      .fa-bars, .fa-balance-scale {
         display: inline;
       }
     }
   }
-  .dropdown-toggle {
-    background-color: $colorBrand !important;
-    border-color: $colorBrand !important;
 
-    &:focus,
-    &:active {
-      box-shadow: none !important;
+  .navbar-nav {
+    padding-top: 60px;
+    .nav-item {
+      &.active {
+        a {
+          color: $colorYellowBrand;
+          text-decoration: underline;
+        }
+      }
+      a {
+        color: $colorWhite;
+        font-family: $ffTrajanPro-Regular;
+        &:hover {
+          text-decoration: underline;
+          color: $colorYellowBrand;
+        }
+      }
+    }
+    .nav-link.active {
+      text-decoration: underline;
+      color: $colorYellowBrand !important;
     }
   }
+
+  //.dropdown-toggle {
+  //  background-color: $colorBrand !important;
+  //  border-color: $colorBrand !important;
+  //
+  //  &:focus,
+  //  &:active {
+  //    box-shadow: none !important;
+  //  }
+  //}
 }
+
+//@media (max-width: $screen-smm-max) {
+//  .navbar {
+//    .dropdown {
+//      max-width: 250px;
+//      position: static;
+//      margin-right: auto !important;
+//      margin-left: unset !important;
+//      .dropdown-toggle {
+//        width: 100%;
+//      }
+//    }
+//    .dropdown-menu.dropdown-menu-right.show {
+//      position: relative;
+//      left: 0;
+//      right: 0;
+//      width: 100%;
+//    }
+//  }
+//}
+//
+//@media (max-width: $screen-xxs-max) {
+//  .navbar {
+//    .dropdown {
+//      max-width: 100%;
+//      margin-right: auto !important;
+//      margin-left: auto !important;
+//    }
+//  }
+//}
+
 
 @media (max-width: $screen-smm-max) {
   .navbar {
-    .dropdown {
-      max-width: 250px;
-      position: static;
-      margin-right: auto !important;
-      margin-left: unset !important;
-      .dropdown-toggle {
-        width: 100%;
-      }
-    }
-    .dropdown-menu.dropdown-menu-right.show {
-      position: relative;
-      left: 0;
-      right: 0;
-      width: 100%;
+    .navbar-nav {
+      padding-top: 0;
     }
   }
 }
 
-@media (max-width: $screen-xxs-max) {
-  .navbar {
-    .dropdown {
-      max-width: 100%;
-      margin-right: auto !important;
-      margin-left: auto !important;
+@media (max-width: $screen-xxs-max){
+  .navbar-brand {
+    .logo {
+      width: 180px;
+      height: auto;
     }
   }
 }
