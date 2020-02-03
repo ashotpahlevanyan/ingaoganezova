@@ -27,6 +27,8 @@ $(document).ready(function(){
             behavior: "smooth"
         });
     });
+    var offsetValue = 0;
+    $('body').scrollspy({ target: '#scrollspy', offset: offsetValue });
 
     // $(".nav-item .nav-link").on("click", function(event){
     //     event.preventDefault();
@@ -41,8 +43,7 @@ $(document).ready(function(){
     //     $(".nav-item").removeClass("active");
     //     $(this).parent().addClass("active");
     // });
-    var offsetValue = 0;
-    $('body').scrollspy({ target: '#scrollspy', offset: offsetValue });
+
 
     $("#scrollspy a").on('click', function(event) {
         offsetValue = $('.header').outerHeight();
@@ -74,7 +75,8 @@ $(document).ready(function(){
         if(!event.target.closest(".navbar")) {
             $('.navbar-collapse').collapse('hide');
         }
-    })
+    });
+
 });
 
 $(window).on('load', function(){
@@ -84,4 +86,39 @@ $(window).on('load', function(){
     } else {
         $(".header").removeClass("fixed");
     }
+
+    /*var $body   = $('body'),
+        $header = $('.header'),
+        offset  = $header.outerHeight();
+
+    // fix body padding (in case navbar size is different than the padding)
+    $body.css('padding-top', offset);
+    // Enable scrollSpy with correct offset based on height of navbar
+    $body.scrollspy({target: '#scrollspy', offset: offset });
+
+    // function to do the tweaking
+    function fixSpy() {
+        // grab a copy the scrollspy data for the element
+        var data = $body.data('activate.bs.scrollspy');
+        // if there is data, lets fiddle with the offset value
+        if (data) {
+            // get the current height of the navbar
+            offset = $navtop.outerHeight();
+            // adjust the body's padding top to match
+            $body.css('margin-top', offset);
+            // change the data's offset option to match
+            data.options.offset = offset;
+            // now stick it back in the element
+            $body.data('activate.bs.scrollspy', data);
+            // and finally refresh scrollspy
+            $body.scrollspy('refresh');
+        }
+    }
+
+    // Now monitor the resize events and make the tweaks
+    var resizeTimer;
+    $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(fixSpy, 200);
+    });*/
 });

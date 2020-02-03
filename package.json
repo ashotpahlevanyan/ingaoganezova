@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack  --mode=production",
     "watch": "webpack --progress --watch  --mode=development",
-    "start": "webpack-dev-server --open  --mode=development"
+    "start": "webpack-dev-server --open  --mode=development",
+    "clean": "rm -r css dist img main.js main.js.gz"
   },
   "author": "Shamin Meerankutty",
   "license": "MIT",
