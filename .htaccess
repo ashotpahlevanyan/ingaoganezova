@@ -1,1 +1,1 @@
-DirectoryIndex /dist/index.html
+Redirect 200 / /dist
