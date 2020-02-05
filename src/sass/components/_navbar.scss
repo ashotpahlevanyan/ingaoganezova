@@ -33,6 +33,15 @@
         border: 1px solid $colorBlackLight;
         color: $colorBlack;
       }
+      .navbar-collapse {
+        position: absolute;
+        top: 119px;
+        z-index: 6;
+        background-color: $colorBlack;
+        left: -15px;
+        right: -15px;
+        padding-left: 15px;
+      }
 
       .navbar-nav {
         padding-top: 30px;
@@ -166,6 +175,11 @@
 }
 
 @media (max-width: $screen-xxs-max){
+  .navbar {
+    .navbar-collapse {
+      top: 95px;
+    }
+  }
   .navbar-brand {
     .logo {
       width: 180px;
