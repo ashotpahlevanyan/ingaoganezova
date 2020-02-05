@@ -14,7 +14,7 @@ $(document).ready(function(){
     const offsets = {};
 
     // var offsetValue = 0;
-    // $('body').scrollspy({ target: '#scrollspy', offset: offsetValue });
+    $('body').scrollspy({ target: '#scrollspy', offset: 0 });
 
 
     function setOffsets() {
